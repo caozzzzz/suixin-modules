@@ -1,0 +1,9 @@
+#!name=SideStore LocalDevVPN
+#!desc=使用 Surge 替代 LocalDevVPN，为 SideStore / LiveContainer 提供本机回环
+
+[General]
+ipv6-vif = disabled
+tun-included-routes = %INSERT% 10.7.0.1/32
+
+[IP Rewrite]
+10.7.0.1 = reflect
